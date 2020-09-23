@@ -33,9 +33,13 @@ module.exports = {
         {
           title: "反向代理",
           collapsable: false,
-          path: "/nginx/cache",
+          path: "/nginx/proxy",
         },
-        
+        {
+            title: "缓存",
+            collapsable: false,
+            path: "/nginx/cache",
+          },
         
         
         
