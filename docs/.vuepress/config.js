@@ -4,25 +4,43 @@ module.exports = {
   themeConfig: {
     // 添加导航栏
     nav: [
-      { text: "vue", link: "/" },
-      { text: "css", link: "/css/" },
-      { text: "js", link: "/js/" },
+      {
+        text: "OS",
+        items: [
+          {
+            text: "Ubuntu",
+            link: "/linux/ubuntu/user",
+          },
+        ],
+      },
+      { text: "Nginx", link: "/nginx/cache" }
     ],
     // 为以下路由添加侧边栏
     sidebar: {
-      "/": [
+      "/linux/ubuntu/": [
         {
-          title: "items01",
+          title: "用户管理",
           collapsable: false,
-          path: "/vue/one",
+          path: "/linux/ubuntu/user",
         },
         {
-          title: "items02",
+          title: "群组管理",
           collapsable: false,
-          path: "/vue/two",
+          path: "/linux/ubuntu/groups",
         },
       ],
-      "/css/": ["three", "four"],
+      "/nginx/": [
+        {
+          title: "反向代理",
+          collapsable: false,
+          path: "/nginx/cache",
+        },
+        
+        
+        
+        
+        
+      ],
     },
   },
 };
