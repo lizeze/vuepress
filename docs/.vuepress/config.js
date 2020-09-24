@@ -13,13 +13,34 @@ module.exports = {
           },
         ],
       },
-      { text: "Nginx", link: "/nginx/proxy" },
       {
         text: "前端",
         items: [
           {
             text: "Arcgis",
             link: "/web/arcgis/line",
+          },
+        ],
+      },
+      {
+        text: "后端",
+        items: [
+          {
+            text: "NodeJs",
+            link: "/server/nodejs/base",
+          },
+        ],
+      },
+      {
+        text: "工具",
+        items: [
+          {
+            text: "Git",
+            link: "/tool/git/base",
+          },
+          {
+            text: "Nginx",
+            link: "/nginx/proxy",
           },
         ],
       },
@@ -43,13 +64,27 @@ module.exports = {
           title: "基础设置",
           collapsable: false,
           path: "/nginx/proxy",
-        }
+        },
       ],
       "/web/arcgis/": [
         {
           title: "Graphic",
           collapsable: false,
           path: "/web/arcgis/line",
+        },
+      ],
+      "/tool/git/base": [
+        {
+          title: "Base",
+          collapsable: false,
+          path: "/tool/git/base",
+        },
+      ],
+      "/server/nodejs/base": [
+        {
+          title: "NodeJs",
+          collapsable: false,
+          path: "/server/nodejs/base",
         },
       ],
     },

@@ -25,3 +25,28 @@
  });
  view.graphics.addMany([polylineGraphic]);
 ```
+
+## 新增点
+
+``` javascript
+let point = {
+    type: "point",  
+    longitude: -49.97,
+    latitude: 41.73,
+    spatialReference: view.spatialReference //设置坐标系
+};
+let markerSymbol = {
+    type: "simple-marker",  
+    color: [226, 119, 40],
+    outline: {
+        color: [255, 255, 255],
+        width: 2
+    }
+};
+let pointGraphic = new Graphic({
+    geometry: point,
+    symbol: markerSymbol,
+    spatialReference: view.spatialReference //设置坐标系
+});
+ view.graphics.addMany([pointGraphic]);
+```
