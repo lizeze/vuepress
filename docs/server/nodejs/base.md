@@ -21,5 +21,6 @@ export NVM_DIR="$HOME/.nvm"
 ```
 
 ```shell
-$ nvm install node
+$ nvm install node # 安装nodejs
+$ npm config set registry http://registry.npm.taobao.org/ # 设置淘宝镜像
 ```
