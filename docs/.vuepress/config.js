@@ -13,7 +13,16 @@ module.exports = {
           },
         ],
       },
-      { text: "Nginx", link: "/nginx/cache" }
+      { text: "Nginx", link: "/nginx/proxy" },
+      {
+        text: "前端",
+        items: [
+          {
+            text: "Arcgis",
+            link: "/web/arcgis/line",
+          },
+        ],
+      },
     ],
     // 为以下路由添加侧边栏
     sidebar: {
@@ -31,19 +40,17 @@ module.exports = {
       ],
       "/nginx/": [
         {
-          title: "反向代理",
+          title: "基础设置",
           collapsable: false,
           path: "/nginx/proxy",
-        },
+        }
+      ],
+      "/web/arcgis/": [
         {
-            title: "缓存",
-            collapsable: false,
-            path: "/nginx/cache",
-          },
-        
-        
-        
-        
+          title: "Graphic",
+          collapsable: false,
+          path: "/web/arcgis/line",
+        },
       ],
     },
   },
